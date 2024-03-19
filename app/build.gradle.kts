@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -32,7 +33,12 @@ android {
 }
 
 dependencies {
+    //Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:32.7.4"))
+    //import CardView
+    implementation ("androidx.cardview:cardview:1.0.0")
 
+    
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
