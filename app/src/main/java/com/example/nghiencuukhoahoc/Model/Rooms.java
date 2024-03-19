@@ -15,11 +15,12 @@ public class Rooms {
 
     private int gas_state;
     public Rooms(String name, float temperature, float humadity,
-                 float gas, int lamp_state, int fan_state) {
+                 float gas, int gas_state) {
         this.name = name;
         this.temperature = temperature;
         this.humadity = humadity;
         this.gas = gas;
+        this.gas_state=gas_state;
     }
     public Rooms(){
         this.name = "Not availble";
@@ -32,6 +33,8 @@ public class Rooms {
         }if(humadity != 0){
             count++;
         }if(gas != -1){
+            count++;
+        }if(gas_state != -1){
             count++;
         }
         return count;
