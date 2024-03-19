@@ -39,6 +39,11 @@ dependencies {
     //import CardView
     implementation ("androidx.cardview:cardview:1.0.0")
 
+    //volley
+    implementation("com.android.volley:volley:1.2.1")
+
+    //json
+    implementation ("com.google.code.gson:gson:2.8.9")
     
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
