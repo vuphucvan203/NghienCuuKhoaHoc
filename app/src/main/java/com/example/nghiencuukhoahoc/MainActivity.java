@@ -20,6 +20,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.nghiencuukhoahoc.Adapter.FragmentAdapter;
 import com.example.nghiencuukhoahoc.Model.ProcessJson;
 import com.example.nghiencuukhoahoc.WeatherForcast.DataWeather;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
 import java.text.DecimalFormat;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             TvHumidityAndWind;
     private ImageView imgWeather,avartar;
     private ImageButton img_btn_Logout;
+    private FloatingActionButton addbtn;
     private TabLayout tabLayout;
     private ViewPager2 viewPager2;
     private FragmentAdapter fragmentAdapter;

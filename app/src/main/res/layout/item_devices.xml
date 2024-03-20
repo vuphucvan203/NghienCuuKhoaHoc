@@ -11,6 +11,7 @@
     app:cardCornerRadius="30dp">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:background="@drawable/weatherforcast"
         android:layout_height="match_parent">
 
         <ImageView
@@ -29,11 +30,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="40dp"
             android:text="Available"
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_bias="0.769"
             app:layout_constraintStart_toEndOf="@+id/img_devices"
             app:layout_constraintTop_toTopOf="parent"></TextView>
 
@@ -41,7 +42,7 @@
             android:id="@+id/img_warning"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginStart="44dp"
+            android:layout_marginStart="35dp"
             android:layout_marginTop="24dp"
             android:src="@drawable/normal"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +54,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="normal"
-            android:textSize="10sp"
+            android:textSize="13sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.068"
