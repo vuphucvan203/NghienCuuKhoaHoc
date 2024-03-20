@@ -61,7 +61,7 @@ public class KitchenFragment extends Fragment implements onItemClickListener {
             public void onChanged(List<Rooms> rooms) {
 
                 for(int i =0 ; i < rooms.size(); i++){
-                    if(rooms.get(i).getName().equals("livingRoom")){
+                    if(rooms.get(i).getName().equals("kitchen")){
                         adapterDevices.SetData(rooms.get(i));
                         break;
                     }

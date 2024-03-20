@@ -195,18 +195,17 @@
     </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="5dp"
+        android:id="@+id/tablayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/tablayout"
-        app:tabMode="scrollable"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
         app:tabGravity="fill"
-        app:tabIndicatorGravity="stretch"
-        app:tabSelectedTextColor="@color/white"
+        app:tabIndicator="@drawable/tab_indicator"
         app:tabIndicatorAnimationMode="elastic"
-        app:tabIndicator="@drawable/tab_indicator">
-    </com.google.android.material.tabs.TabLayout>
+        app:tabIndicatorGravity="stretch"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/white"></com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager2.widget.ViewPager2
         android:layout_marginTop="20dp"

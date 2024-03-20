@@ -10,6 +10,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.nghiencuukhoahoc.Fragment.AllRoomFragment;
 import com.example.nghiencuukhoahoc.Fragment.BedRoomFragment;
+import com.example.nghiencuukhoahoc.Fragment.KitchenFragment;
 import com.example.nghiencuukhoahoc.Fragment.LivingRoomFragment;
 
 public class FragmentAdapter extends FragmentStateAdapter {
@@ -33,13 +34,16 @@ public class FragmentAdapter extends FragmentStateAdapter {
             return allRoom;
         } else if (position == 1) {
             return new BedRoomFragment();
-        } else return new LivingRoomFragment();
-
+        } else if (position == 2) {
+            return new LivingRoomFragment();
+        }else {
+            return new KitchenFragment();
+        }
     }
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 4;
     }
 
 }

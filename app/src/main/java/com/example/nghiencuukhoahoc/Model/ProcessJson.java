@@ -21,7 +21,7 @@ public class ProcessJson {
         if(lst_rooms == null){
             return "";
         }
-        Rooms bedRoom= new Rooms(), livingRoom = new Rooms();
+        Rooms bedRoom= new Rooms(), livingRoom = new Rooms(),kitchen =new Rooms();
         for(int i = 0 ; i < lst_rooms.size();i++){
             if(lst_rooms.get(i).getName().equals("bedRoom")){
                 bedRoom = lst_rooms.get(i);
@@ -29,8 +29,11 @@ public class ProcessJson {
             if(lst_rooms.get(i).getName().equals("livingRoom")){
                 livingRoom = lst_rooms.get(i);
             }
+            if(lst_rooms.get(i).getName().equals("kitchen")){
+                kitchen = lst_rooms.get(i);
+            }
         }
-        Desired desired = new Desired(livingRoom,bedRoom);
+        Desired desired = new Desired(livingRoom,bedRoom,kitchen);
         State state = new State(desired);
         MyData mydata = new MyData(state);
         String json_res = gson.toJson(mydata);
