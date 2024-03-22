@@ -195,9 +195,11 @@
     </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tablayout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+<<<<<<< HEAD
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
@@ -209,6 +211,20 @@
         app:tabMode="scrollable"
         app:tabSelectedTextColor="@color/white"></com.google.android.material.tabs.TabLayout>
     <RelativeLayout
+=======
+        android:id="@+id/tablayout"
+        app:tabMode="scrollable"
+        app:tabGravity="fill"
+        app:tabIndicatorGravity="stretch"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicator="@drawable/tab_indicator">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_marginTop="20dp"
+        android:id="@+id/viewPage2"
+>>>>>>> parent of 980c635 (tick)
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >

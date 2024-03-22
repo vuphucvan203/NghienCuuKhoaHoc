@@ -79,14 +79,10 @@ public class LivingRoomFragment extends Fragment implements onItemClickListener 
 //            intent.putExtra("name", name);
 //            startActivity(intent);
 //        }
-        if(value!=-1)
-        {
-            if (position == 2) { // Lamp
-                Intent intent = new Intent(getActivity(), GasActivity.class);
-                intent.putExtra("name", name);
-                startActivity(intent);
-            }
+        if (position == 2) { // Lamp
+            Intent intent = new Intent(getActivity(), GasActivity.class);
+            intent.putExtra("name", name);
+            startActivity(intent);
         }
-
     }
 }

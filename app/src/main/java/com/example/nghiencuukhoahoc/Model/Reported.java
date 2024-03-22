@@ -3,19 +3,10 @@ package com.example.nghiencuukhoahoc.Model;
 public class Reported {
     private Rooms livingRoom;
     private Rooms bedRoom;
-    private Rooms kitchen;
-    public Reported(Rooms livingRoom, Rooms bedRoom,Rooms kitchen) {
+
+    public Reported(Rooms livingRoom, Rooms bedRoom) {
         this.livingRoom = livingRoom;
         this.bedRoom = bedRoom;
-        this.kitchen=kitchen;
-    }
-
-    public Rooms getKitchen() {
-        return kitchen;
-    }
-
-    public void setKitchen(Rooms kitchen) {
-        this.kitchen = kitchen;
     }
 
     public Reported() {

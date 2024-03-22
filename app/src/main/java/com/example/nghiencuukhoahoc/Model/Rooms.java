@@ -2,7 +2,7 @@ package com.example.nghiencuukhoahoc.Model;
 
 public class Rooms {
     private String name;
-    private float temperature, humadity;
+    private float temperature, humadity, gas;
     private int Number_devices;
 
     public int getGas_state() {
@@ -14,10 +14,12 @@ public class Rooms {
     }
 
     private int gas_state;
-    public Rooms(String name, float temperature, float humadity, int gas_state) {
+    public Rooms(String name, float temperature, float humadity,
+                 float gas, int gas_state) {
         this.name = name;
         this.temperature = temperature;
         this.humadity = humadity;
+        this.gas = gas;
         this.gas_state=gas_state;
     }
     public Rooms(){
@@ -29,6 +31,8 @@ public class Rooms {
         if(temperature != 0){
             count++;
         }if(humadity != 0){
+            count++;
+        }if(gas != -1){
             count++;
         }if(gas_state != -1){
             count++;
@@ -58,5 +62,11 @@ public class Rooms {
     }
     public void setHumidity(float humidity) {
         this.humadity = humidity;
+    }
+    public float getGas() {
+        return gas;
+    }
+    public void setGas(float gas) {
+        this.gas = gas;
     }
 }

@@ -11,6 +11,7 @@ import android.util.Log;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("All Room"));
         tabLayout.addTab(tabLayout.newTab().setText("Bed Room"));
         tabLayout.addTab(tabLayout.newTab().setText("Living Room"));
-        tabLayout.addTab(tabLayout.newTab().setText("Kitchen"));
+        tabLayout.addTab(tabLayout.newTab().setText("Stream Room"));
         fragmentAdapter = new FragmentAdapter(getSupportFragmentManager(),getLifecycle());
         viewPager2.setAdapter(fragmentAdapter);
 
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
     private void getWeatherForcast() {
         DecimalFormat df = new DecimalFormat("#.#");
         requestQueue = Volley.newRequestQueue(this);
-        String url = "https://api.openweathermap.org/data/2.5/weather?q=hanoi&appid=e66fcd1f23309eebcfa9ff608c396567";
+        String url = "https://api.openweathermap.org/data/2.5/weather?q=Hanoi&appid=e66fcd1f23309eebcfa9ff608c396567";
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
