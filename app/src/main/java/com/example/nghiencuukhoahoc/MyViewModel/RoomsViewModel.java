@@ -29,6 +29,8 @@ public class RoomsViewModel extends ViewModel {
         LiveData.setValue(lst);
         dataSingleton.setSharedData(lst);
     }
+
+
     public void setData(List<Rooms> m_lst){
         LiveData.setValue(m_lst);
         dataSingleton.setSharedData(m_lst);

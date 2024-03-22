@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tablayout);
         viewPager2 = findViewById(R.id.viewPage2);
         avartar = findViewById(R.id.avatar);
+        addbtn=findViewById(R.id.fl_btn);
 
     }
     private void getTabLayOut() {
@@ -74,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager2.setCurrentItem(tab.getPosition());
+                if(tab.getPosition()!=0)
+                    addbtn.hide();
+                else if(tab.getPosition()==0) addbtn.show();
             }
 
             @Override
